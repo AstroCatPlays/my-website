@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Password</h1>
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button onclick="checkPassword()">Submit</button>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            if (password === '8531') {
+                window.location.href = 'main.html'; // Redirect to actual content
+            } else {
+                alert('Incorrect password, please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
